@@ -1,78 +1,194 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ErmiEarnhub - Online Earning</title>
+<title>ErmiEarnhub - Online Earning Tips, Skills &amp; Safe Opportunities</title>
+<meta name="description" content="Free guides to online work: freelancing, remote jobs, digital skills and content creation. Learn how to earn online and avoid scams.">
+<meta name="theme-color" content="#102b50">
+<meta property="og:title" content="ErmiEarnhub - Online Earning Tips">
+<meta property="og:description" content="Learn skills, find genuine online opportunities and stay safe from scams.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23102b50'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>E</text></svg>">
 <style>
+:root{
+  --navy:#102b50;
+  --blue:#174c83;
+  --green:#087e53;
+  --green-dark:#066443;
+  --bg:#f4f7fb;
+  --text:#172033;
+  --muted:#5a6478;
+  --card:#ffffff;
+  --warn-bg:#fff4e0;
+  --warn-border:#e8a33d;
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
-header{background:#102b50;color:white;padding:25px 18px;text-align:center}
-header h1{margin:0;font-size:30px}
-header p{margin-bottom:0;color:#dceaff}
-nav{background:#174c83;padding:14px;text-align:center}
-nav a{color:white;text-decoration:none;margin:0 10px;font-weight:bold}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--blue)}
+header{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;padding:38px 18px 34px;text-align:center}
+header h1{margin:0;font-size:clamp(28px,7vw,42px);letter-spacing:.5px}
+header p{margin:10px auto 0;max-width:560px;color:#dceaff;font-size:17px}
+nav{position:sticky;top:0;z-index:10;background:var(--blue);padding:10px 8px;text-align:center;box-shadow:0 2px 8px #0003}
+nav a{display:inline-block;color:#fff;text-decoration:none;margin:2px 4px;padding:8px 12px;border-radius:8px;font-weight:600;font-size:15px}
+nav a:hover,nav a:focus{background:#ffffff26}
 main{max-width:850px;margin:auto;padding:18px}
-.hero{background:white;padding:25px;border-radius:15px;margin:15px 0;text-align:center;box-shadow:0 3px 12px #0001}
-.hero h2{color:#174c83}
-.card{background:white;padding:20px;border-radius:12px;margin:15px 0;box-shadow:0 3px 12px #0001}
-.card h3{color:#174c83}
-.btn{display:inline-block;background:#087e53;color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:bold}
-.note{font-size:14px;color:#555}
-footer{text-align:center;background:#102b50;color:white;padding:22px;margin-top:25px}
+.hero{background:var(--card);padding:30px 22px;border-radius:16px;margin:15px 0;text-align:center;box-shadow:0 3px 12px #0001}
+.hero h2{color:var(--blue);margin-top:0;font-size:clamp(24px,6vw,32px)}
+.hero p{max-width:600px;margin:0 auto 18px}
+.btn{display:inline-block;background:var(--green);color:#fff;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:700;margin:5px;border:0;font-size:16px;cursor:pointer}
+.btn:hover{background:var(--green-dark)}
+.btn.alt{background:var(--blue)}
+.btn.alt:hover{background:var(--navy)}
+h2.section{color:var(--navy);margin:34px 0 4px;font-size:26px}
+.sub{margin:0 0 8px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 3px 12px #0001;display:flex;flex-direction:column}
+.card h3{color:var(--blue);margin:0 0 8px}
+.card p{margin:0 0 14px}
+.card .link{margin-top:auto;font-weight:700}
+.tag{display:inline-block;font-size:12px;font-weight:700;background:#e3f1ec;color:var(--green);padding:3px 9px;border-radius:20px;margin-bottom:10px;align-self:flex-start}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;background:var(--card);border-radius:12px;padding:14px 16px 14px 58px;margin:10px 0;position:relative;box-shadow:0 3px 12px #0001}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.warn{background:var(--warn-bg);border-left:5px solid var(--warn-border);padding:18px 20px;border-radius:12px}
+.warn h3{margin:0 0 8px;color:#8a5200}
+.warn ul{margin:0;padding-left:20px}
+.warn li{margin:6px 0}
+details{background:var(--card);border-radius:12px;padding:14px 16px;margin:10px 0;box-shadow:0 3px 12px #0001}
+summary{cursor:pointer;font-weight:700;color:var(--blue)}
+details p{margin:10px 0 0}
+.follow{background:var(--navy);color:#fff;text-align:center;border-radius:16px;padding:28px 20px;margin:34px 0}
+.follow h2{margin-top:0}
+.follow p{color:#dceaff}
+.note{font-size:14px;color:var(--muted)}
+footer{text-align:center;background:var(--navy);color:#fff;padding:26px 18px;margin-top:30px}
+footer p{margin:6px 0}
+footer a{color:#cfe2ff}
+.top{position:fixed;right:14px;bottom:14px;background:var(--blue);color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:20px;box-shadow:0 3px 10px #0004}
 </style>
 </head>
 <body>
+
 <header>
 <h1>ErmiEarnhub</h1>
 <p>Discover online opportunities. Learn new skills. Earn safely.</p>
 </header>
-<nav>
+
+<nav aria-label="Main">
 <a href="#home">Home</a>
 <a href="#opportunities">Opportunities</a>
+<a href="#start">Get Started</a>
 <a href="#safety">Safety</a>
+<a href="#faq">FAQ</a>
 </nav>
+
 <main>
+
 <section class="hero" id="home">
-<h2>Welcome to ErmiEarnhub!</h2>
-<p>Your starting point for learning about online work and digital opportunities.</p>
+<h2>Welcome to ErmiEarnhub</h2>
+<p>Your starting point for learning about online work and digital skills. No hype and no promises of quick money, just honest guidance to help you begin.</p>
 <a class="btn" href="#opportunities">Explore Opportunities</a>
+<a class="btn alt" href="#start">How to Start</a>
 </section>
-<h2 id="opportunities">Explore Online Opportunities</h2>
+
+<h2 class="section" id="opportunities">Online Opportunities</h2>
+<p class="sub">Four common ways people earn online. Each one takes time and effort to learn.</p>
+
+<div class="grid">
 <section class="card">
+<span class="tag">Skill-based</span>
 <h3>1. Freelance Work</h3>
-<p>Learn skills such as writing, translation, graphic design, and video editing. Build examples of your work before looking for clients.</p>
-<a href="https://www.fiverr.com/" target="_blank" rel="noopener">Visit Fiverr</a>
+<p>Learn skills such as writing, translation, graphic design or video editing. Build examples of your work before looking for clients.</p>
+<a class="link" href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer">Visit Fiverr &rarr;</a>
 </section>
+
 <section class="card">
+<span class="tag">Job search</span>
 <h3>2. Remote Jobs</h3>
 <p>Search for remote jobs and check carefully whether each employer accepts applicants in your country.</p>
-<a href="https://remoteok.com/" target="_blank" rel="noopener">Explore Remote Jobs</a>
+<a class="link" href="https://remoteok.com/" target="_blank" rel="noopener noreferrer">Explore Remote Jobs &rarr;</a>
 </section>
+
 <section class="card">
+<span class="tag">Free learning</span>
 <h3>3. Learn Digital Skills</h3>
-<p>Start learning computer skills, web design, and other useful skills for free.</p>
-<a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">Learn Free at freeCodeCamp</a>
+<p>Start with computer skills, web design and other useful skills. Many courses are free.</p>
+<a class="link" href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Learn Free at freeCodeCamp &rarr;</a>
 </section>
+
 <section class="card">
+<span class="tag">Long-term</span>
 <h3>4. Create Content</h3>
-<p>Learn how to make useful videos, write posts, and grow an audience. Income is not guaranteed.</p>
-<a href="https://support.google.com/youtube/" target="_blank" rel="noopener">YouTube Help</a>
+<p>Make useful videos, write posts and grow an audience over time. Income is not guaranteed and usually takes months.</p>
+<a class="link" href="https://support.google.com/youtube/" target="_blank" rel="noopener noreferrer">YouTube Help &rarr;</a>
 </section>
-<section class="card" id="safety">
-<h3>Stay Safe Online</h3>
-<p>Never pay a stranger to receive a promised job. Do not share passwords or verification codes. Check payment methods and country restrictions before working.</p>
+</div>
+
+<h2 class="section" id="start">How to Get Started</h2>
+<p class="sub">A simple path for beginners.</p>
+<ol class="steps">
+<li><strong>Pick one skill.</strong> Choose something you can practise daily, like writing, design or editing.</li>
+<li><strong>Learn from free resources.</strong> Courses and tutorials are enough to begin.</li>
+<li><strong>Build a small portfolio.</strong> Make 3 to 5 sample pieces to show what you can do.</li>
+<li><strong>Set up a safe way to get paid.</strong> Check which payment methods work in your country.</li>
+<li><strong>Apply or offer your service.</strong> Start small, ask for feedback and keep improving.</li>
+</ol>
+
+<h2 class="section" id="safety">Stay Safe Online</h2>
+<div class="warn">
+<h3>&#9888; Warning signs of a scam</h3>
+<ul>
+<li>You are asked to <strong>pay</strong> to receive a job or a prize.</li>
+<li>Someone promises guaranteed or very fast income.</li>
+<li>A stranger asks for your password, ID or verification codes.</li>
+<li>The offer arrives only through WhatsApp, Telegram or social media messages.</li>
+<li>The company has no website, address or real reviews.</li>
+</ul>
+</div>
+<p class="note">Always check payment methods and country restrictions before you start working with anyone.</p>
+
+<h2 class="section" id="faq">Common Questions</h2>
+<details>
+<summary>Can I really earn money online?</summary>
+<p>Yes, many people do, but it takes time, skill and patience. Be careful with anyone who promises fast or guaranteed money.</p>
+</details>
+<details>
+<summary>Do I need money to start?</summary>
+<p>No. You can learn skills for free. A real job or client will never require you to pay just to get hired.</p>
+</details>
+<details>
+<summary>How long before I earn my first income?</summary>
+<p>It varies a lot. Some people get a first client within weeks, others take months. Consistent practice matters most.</p>
+</details>
+<details>
+<summary>How will I get paid?</summary>
+<p>It depends on the platform and your country. Check the supported payment methods before you sign up.</p>
+</details>
+
+<section class="follow" id="follow">
+<h2>Follow ErmiEarnhub</h2>
+<p>Get new tips and updates on our Facebook page.</p>
+<!-- TODO: replace the # below with your real Facebook page link -->
+<a class="btn" href="#" target="_blank" rel="noopener noreferrer">Visit Our Facebook Page</a>
 </section>
-<section class="card">
+
+<section class="card" id="about">
 <h3>About Us</h3>
-<p>ErmiEarnhub shares educational information about online work, digital skills, and earning opportunities.</p>
-<p class="note">We do not guarantee income or represent the companies linked on this website.</p>
+<p>ErmiEarnhub shares educational information about online work, digital skills and earning opportunities.</p>
+<p class="note"><strong>Disclaimer:</strong> We do not guarantee income and we do not represent the companies linked on this website. Results depend on your own effort and circumstances. Some links may be affiliate links in the future; if so, we will say so clearly.</p>
 </section>
+
 </main>
+
 <footer>
-<p>© 2026 ErmiEarnhub</p>
-<p>Learn • Build Skills • Explore Opportunities</p>
+<p>&copy; 2026 ErmiEarnhub</p>
+<p>Learn &bull; Build Skills &bull; Explore Opportunities</p>
 </footer>
+
+<a class="top" href="#home" aria-label="Back to top">&uarr;</a>
+
 </body>
 </html>
